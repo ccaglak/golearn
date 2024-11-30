@@ -6,7 +6,5 @@ import (
 )
 
 func main() {
-
 	fmt.Print(hello.Hello("Chad", "Turkish"))
-
 }

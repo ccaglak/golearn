@@ -1,11 +1,15 @@
 package main
 
 import (
-	"fmt"
+	"log"
+	"net/http"
 
-	"golearn/hello"
+	"golearn/di"
 )
 
 func main() {
-	fmt.Print(hello.Hello("Chad", "Turkish"))
+	// di.Greet(os.Stdout, "Chad")
+	log.Fatal(
+		http.ListenAndServe("127.0.0.1:8000",
+			http.HandlerFunc(di.MyGreeterHandler)))
 }

@@ -1,5 +1,9 @@
 package main
 
+import "fmt"
+
+var pl = fmt.Println
+
 func main() {
 	// di.Greet(os.Stdout, "Chad")
 	// log.Fatal(
